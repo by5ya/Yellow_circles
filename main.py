@@ -20,7 +20,7 @@ class YellowCircle(QMainWindow, Ui_MainWindow):
         self.figure = "circle"
         self.flag = True
         self.size = random.randint(10, 301)
-        self.color = QColor('yellow')
+        self.color = QColor(random.randint(0, 256), random.randint(0, 256), random.randint(0, 256))
         self.update()
 
     def paintEvent(self, event):
